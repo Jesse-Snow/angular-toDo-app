@@ -23,6 +23,7 @@ export class AppComponent {
     this.tasks = JSON.parse(existingTasks as string) || [];
   }
 
+  // Event that will update the State
   addTask(){
     this.tasks.push(this.taskInput); // Changing states
     localStorage.setItem('todos',JSON.stringify(this.tasks));
